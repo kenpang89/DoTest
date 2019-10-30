@@ -1,0 +1,58 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "Do Test APIs"
+  },
+  "paths": {
+    "/api/user/{userId}": {
+      "get": {
+        "tags": [
+          "GetUserProfile"
+        ],
+        "operationId": "GetUserProfile",
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/user/{userId}/follow?by=viewer_id": {
+      "get": {
+        "tags": [
+          "Follow User Profile"
+        ],
+        "operationId": "follow",
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/user/{userId}/unfollow?by=viewer_id": {
+      "get": {
+        "tags": [
+          "Unfollow User Profile"
+        ],
+        "operationId": "unfollow",
+        "consumes": [],
+        "produces": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}

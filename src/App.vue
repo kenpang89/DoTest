@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Profile/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Profile from './components/Profile.vue';
+import ToggleButton from 'vue-js-toggle-button'
+ 
+Vue.use(ToggleButton)
 
 @Component({
   components: {
-    HelloWorld,
+    Profile
   },
 })
 export default class App extends Vue {}
@@ -26,4 +28,5 @@ export default class App extends Vue {}
   color: #2c3e50;
   margin-top: 60px;
 }
+@import'~bootstrap/dist/css/bootstrap.css';
 </style>
